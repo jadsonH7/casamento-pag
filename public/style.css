@@ -1,0 +1,918 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset */
+* {
+    font-family: "Abel", "Inter", "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Theme Ligth */
+:root {
+    --color-bg-ligth: #f6f4eb;
+    --color-primary-ligth: #91c8e4;
+    --color-secundary-ligth: #a0dbf8;
+    --color-font-ligth: #4682a9;
+    --color-font-b-ligth: #1a6da5;
+    --color-border-ligth: #444;
+    --color-erro-ligth: #cf2121;
+    --color-seccess-ligth: #42cf1f;
+}
+
+/* Theme Dark */
+:root {
+    --color-bg-dark: #4682a9;
+    --color-primary-dark: #749bc2;
+    --color-secundary-dark: #91c8e4;
+    --color-font-dark: #f6f4eb;
+    --color-font-b-dark: #ebf3f6;
+    --color-border-dark: #444;
+    --color-erro-dark: #b11b1b;
+    --color-seccess-dark: #36a01b;
+}
+
+body {
+    background-color: var(--color-bg-ligth);
+    overflow-x: hidden;
+}
+
+.conteiner {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.logotipo {
+    width: 100%;
+    position: relative;
+}
+
+.logotipo .logo {
+    background-color: var(--color-bg-ligth);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.logo span {
+    width: 15rem;
+    top: -5rem;
+    position: relative;
+}
+
+.logotipo .logo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.logotipo .logo.logo-active {
+    height: 14dvh;
+    padding-top: .5rem;
+    transition: .5s;
+}
+
+/* Icon menu */
+.logotipo .open-menu {
+    border-top: 3px solid;
+    width: 30px;
+    position: fixed;
+    top: 3rem;
+    right: 2rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.open-menu::before, .open-menu::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 6px;
+    transition: 1s;
+    position: relative;
+    cursor: pointer;
+}
+
+.open-menu.exit-menu {
+    top: 3.5rem;
+    left: 17.5rem;
+    border-top: transparent;
+    z-index: 5;
+}
+
+.open-menu.exit-menu::before {
+    transform: rotate(135deg);
+}
+
+.open-menu.exit-menu::after {
+    transform: rotate(-135deg);
+    top: -8px;
+}
+
+/* Menu */
+.conteiner-menu {
+    background-color: #44444498;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    transition: .3s ease;
+}
+
+.conteiner-menu.bgmenu-ativo {
+    visibility: visible;
+}
+
+.menu {
+    background-color: var(--color-bg-ligth);
+    margin-top: 2rem;
+    width: 0;
+    height: 93%;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    overflow: hidden;
+    transition: .6s;
+}
+
+.menu.menu-ativo {
+    width: 20rem;
+}
+
+.nav-menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem 2rem 2rem 1rem;
+}
+
+.box-links {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+}
+
+.nav-link {
+    width: 100%;
+}
+
+.nav-link a {
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: var(--color-font-ligth);
+}
+
+.box-registe {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login .registe {
+    width: 100%;
+}
+
+.bi-box-arrow-in-right, .bi-person-circle {
+    font-size: 1.4rem;
+    color: var(--color-font-ligth);
+}
+
+/* Data */
+
+/* História */
+
+/* Local */
+
+/* Sobre */
+
+/* Pagina inicial */
+
+#home {
+    width: 100%;
+}
+
+.box-imgs {
+    position: relative;
+    width: 100%;
+    height: 230dvh;
+}
+
+.img-home .img {
+    width: 100%;
+}
+
+.img-home:nth-child(1) {
+    position: absolute;
+    top: 1.5rem;
+    left: 2rem;
+    width: 15rem;
+}
+
+.img-home:nth-child(2) {
+    background-color: var(--color-font-ligth);
+    border-radius: 50%;
+    position: absolute;
+    top: 15rem;
+    right: 2rem;
+    height: 7rem;
+    width: 7rem;
+}
+
+.img-home:nth-child(3) {
+    position: absolute;
+    top: 25rem;
+    right: 5rem;
+    width: 20rem;
+}
+
+.img-home:nth-child(4) {
+    background-color: var(--color-font-ligth);
+    border-radius: 50%;
+    position: absolute;
+    top: 49rem;
+    left: 2rem;
+    height: 10rem;
+    width: 10rem;
+}
+
+.img-home:nth-child(5) {
+    position: absolute;
+    top: 60rem;
+    right: 2rem;
+    width: 15rem;
+}
+
+.img-home:nth-child(6) {
+    position: absolute;
+    top: 80rem;
+    left: 2.5rem;
+    width: 25rem;
+    border: 1.5rem solid var(--color-font-ligth);
+    border-radius: 50%;
+}
+
+.content-home {
+    width: 100%;
+    padding: 2rem 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.content-home .title-home {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--color-font-b-ligth);
+    padding-top: 1rem;
+}
+
+.content-home .text-home {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: var(--color-font-ligth);
+    text-align: justify;
+}
+
+.home .btn-center .btn-menu {
+    padding: 0 .5rem;
+}
+
+/* Buttons plus */
+.btn-center {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 4rem 0;
+}
+
+.btn-center .btn-menu {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-font-ligth);
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: var(--color-secundary-ligth);
+}
+
+/* Informações Noivos */
+#noivos {
+    width: 100%;
+    background-color: var(--color-primary-ligth);
+    padding: 3rem 0;
+}
+
+#noivos .title-info {
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--color-font-b-ligth);
+}
+
+.box-information {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem 0;
+}
+
+.information {
+    background-color: var(--color-bg-ligth);
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.information .subtitle-info {
+    color: var(--color-font-b-ligth);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.information .text-info {
+    color: var(--color-border-ligth);
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+/* Preferências */
+#preferencias {
+    width: 100%;
+}
+
+.box-pref {
+    position: relative;
+    width: 100%;
+    height: 160dvh;
+}
+
+.img-pref .img {
+    width: 100%;
+}
+
+.img-pref:nth-child(1) {
+    position: absolute;
+    top: 4rem;
+    left: 2rem;
+    width: 15rem;
+}
+
+.img-pref:nth-child(2) {
+    background-color: var(--color-bg-ligth);
+    border: 1.5rem solid var(--color-font-ligth);
+    border-radius: 50%;
+    position: absolute;
+    top: 18rem;
+    right: 2rem;
+    height: 9rem;
+    width: 9rem;
+}
+
+.img-pref:nth-child(3) {
+    position: absolute;
+    top: 31rem;
+    left: 3rem;
+    width: 20rem;
+}
+
+.img-pref:nth-child(4) {
+    position: absolute;
+    top: 55rem;
+    right: 3rem;
+    width: 17rem;
+    border: 1.5rem solid var(--color-font-ligth);
+    border-radius: 50%;
+}
+
+#preferencias .pref {
+    padding: 2rem 3rem 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.title-pref {
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--color-font-b-ligth);
+}
+
+.text-pref {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: var(--color-font-ligth);
+    text-align: justify;
+}
+
+.pref-circle {
+    width: 100%;
+    position: relative;
+}
+
+.pref-circle .img-circle {
+    background-color: var(--color-font-ligth);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin: 1rem 0 5rem 2rem;
+}
+
+#padrinho-pajem-daminha {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #dbeef5;
+    padding: 0 0 3rem 0;
+}
+
+.padrinhos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    gap: 2rem;
+    background-color: var(--color-primary-ligth);
+    padding: 3rem 3rem 25rem 3rem;
+}
+
+.padrinhos .title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--color-font-b-ligth);
+}
+
+.padrinhos .text {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: justify;
+}
+
+.box-padrinho {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 23rem 0 3rem 0;
+}
+
+.card-padrinho {
+    background-color: var(--color-bg-ligth);
+    width: 25rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card-padrinho .img-padrinho {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card-padrinho .img-padrinho img {
+    width: 20rem;
+}
+
+.card-padrinho .title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-font-b-ligth);
+}
+
+.card-padrinho .text {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: justify;
+    color: var(--color-font-ligth);
+}
+
+.card-padrinho:nth-child(1) {
+    position: absolute;
+    top: -20rem;
+}
+
+#festa {
+    width: 100%;
+}
+
+#festa .box-festa {
+    position: relative;
+    height: 195dvh;
+}
+
+.imgs-festa img {
+    width: 100%;
+}
+
+.imgs-festa:nth-child(1) {
+    width: 20rem;
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+}
+
+.imgs-festa:nth-child(2) {
+    background-color: var(--color-font-ligth);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 27rem;
+    left: 5rem;
+}
+
+.imgs-festa:nth-child(3) {
+    background-color: var(--color-bg-ligth);
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    border: 1rem solid var(--color-font-ligth);
+    position: absolute;
+    top: 37rem;
+    right: 5rem;
+}
+
+.imgs-festa:nth-child(4) {
+    width: 15rem;
+    position: absolute;
+    top: 48rem;
+    right: 4rem;
+}
+
+.imgs-festa:nth-child(5) {
+    width: 20rem;
+    position: absolute;
+    top: 67rem;
+    left: 3rem;
+}
+
+.descricao-festa {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 3rem;
+}
+
+.descricao-festa .title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--color-font-b-ligth);
+}
+
+.descricao-festa .text {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: var(--color-font-ligth);
+    text-align: justify;
+}
+
+#ajuda-noivos {
+    width: 100%;
+    position: relative;
+    background-color: var(--color-secundary-ligth);
+    padding: 6rem 4rem;
+}
+
+.box-ajuda {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: auto;
+}
+
+.box-ajuda .ajuda-img {
+    width: 100%;
+}
+
+.ajuda-img img {
+    width: 22rem;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.descricao-ajuda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.descricao-ajuda .subtitle {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--color-font-b-ligth);
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.descricao-ajuda .title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--color-font-b-ligth);
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.descricao-ajuda .text {
+    font-size: 1.5rem;
+    color: var(--color-font-b-ligth);
+    text-align: justify;
+}
+
+#ajuda-noivos .btn-center .btn-menu {
+    background-color: var(--color-font-b-ligth);
+    color: var(--color-bg-ligth);
+}
+
+#agradecimentos {
+    width: 100%;
+}
+
+#agradecimentos .box-agradecimento {
+    width: 100%;
+    padding-top: 10rem;
+    position: relative;
+}
+
+.img-agradecimento .img-circle {
+    background-color: var(--color-bg-ligth);
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: 1.5rem solid var(--color-font-ligth);
+    position: absolute;
+    top: 5rem;
+    right: 7rem;
+}
+
+.img-agradecimento img {
+    width: 20rem;
+    padding: 5rem 0 2rem 2rem;
+}
+
+.box-agradecimento .descricao-agradecimento {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 3rem;
+}
+
+.descricao-agradecimento .title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--color-font-b-ligth);
+    text-align: center;
+}
+
+.descricao-agradecimento .text {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: var(--color-font-ligth);
+    text-align: justify;
+}
+
+.imgs-agradecimentos {
+    width: 100%;
+    position: relative;
+    height: 170dvh;
+}
+
+.imgs-agradecimentos img {
+    width: 100%;
+}
+
+.imgs-agradecimento:nth-child(1) {
+    background-color: var(--color-font-ligth);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 2rem;
+}
+
+.imgs-agradecimento:nth-child(2) {
+    width: 23rem;
+    position: absolute;
+    top: 16rem;
+    right: 1rem;
+    border: 1.5rem solid var(--color-font-ligth);
+    border-radius: 50%;
+}
+
+.imgs-agradecimento:nth-child(3) {
+    width: 27rem;
+    position: absolute;
+    top: 45rem;
+    left: 2rem;
+}
+
+#contacts {
+    width: 100%;
+    background-color: var(--color-secundary-ligth);
+}
+
+#contacts .imgs-contact {
+    width: 100%;
+    height: 150dvh;
+    position: relative;
+}
+
+.img-contact img {
+    width: 100%;
+}
+
+.img-contact:nth-child(1) {
+    background-color: var(--color-secundary-ligth);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 1.5rem solid var(--color-font-ligth);
+    position: absolute;
+    top: 5rem;
+    left: 3rem;
+}
+
+.img-contact:nth-child(2) {
+    width: 25rem;
+    position: absolute;
+    top: 20rem;
+    left: 4rem;
+}
+
+.img-contact:nth-child(3) {
+    background-color: var(--color-font-ligth);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 39rem;
+    right: 3rem;
+}
+
+.img-contact:nth-child(4) {
+    background-color: var(--color-secundary-ligth);
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    border: 1.5rem solid var(--color-font-ligth);
+    position: absolute;
+    top: 55rem;
+    left: 8rem;
+}
+
+#contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+
+.title-contact {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-font-b-ligth);
+}
+
+#contact .box-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.box-contact .subtitle {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--color-font-b-ligth);
+}
+
+.box-contact .link-contact {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: var(--color-font-ligth);
+    text-align: justify;
+}
+
+.box-contact .text-area {
+    background-color: var(--color-primary-ligth);
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 1rem 1rem;
+    color: var(--color-font-b-ligth);
+    letter-spacing: .1rem;
+    line-height: 1.75rem;
+}
+
+.box-contact .btn-submit {
+    padding: .5rem 5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--color-font-ligth);
+    color: var(--color-bg-ligth);
+    letter-spacing: .2rem;
+}
+
+.copywhite {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-border-ligth);
+    padding: 5rem 2rem;
+}
+
+.copywhite .box-termos {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.box-termos .area-dev, .politicas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.area-dev > .text-copy, .dev, .github {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-bg-ligth);
+}
+
+.politicas .politica {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--color-primary-ligth);
+}
+
+.logo-foot {
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-foot img {
+    width: 100%;
+    object-fit: cover;
+}
