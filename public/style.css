@@ -62,8 +62,8 @@ body {
 }
 
 .logo span {
-    width: 15rem;
-    top: -5rem;
+    width: 10rem;
+    top: -3rem;
     position: relative;
 }
 
@@ -208,7 +208,7 @@ body {
 .box-imgs {
     position: relative;
     width: 100%;
-    height: 190dvh;
+    height: 230vh;
 }
 
 .img-home .img {
@@ -370,7 +370,7 @@ body {
 .box-pref {
     position: relative;
     width: 100%;
-    height: 145dvh;
+    height: 170dvh;
 }
 
 .img-pref .img {
@@ -543,7 +543,7 @@ body {
 
 #festa .box-festa {
     position: relative;
-    height: 170dvh;
+    height: 195dvh;
 }
 
 .imgs-festa img {
@@ -619,25 +619,26 @@ body {
 #ajuda-noivos {
     width: 100%;
     background-color: var(--color-secundary-ligth);
-    padding: 6rem 4rem;
+    padding: 6rem 3rem;
 }
 
 .box-ajuda {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     gap: 2rem;
 }
 
 .box-ajuda .ajuda-img {
     width: 100%;
+    margin: auto;
 }
 
 .ajuda-img img {
-    width: 20rem;
-    height: 26rem;
+    width: 17rem;
+    height: 23rem;
     object-fit: cover;
     border-radius: .5rem;
 }
@@ -731,7 +732,7 @@ body {
 .imgs-agradecimentos {
     width: 100%;
     position: relative;
-    height: 120dvh;
+    height: 135dvh;
 }
 
 .imgs-agradecimentos img {
@@ -771,7 +772,7 @@ body {
 
 #contacts .imgs-contact {
     width: 100%;
-    height: 110dvh;
+    height: 130dvh;
     position: relative;
 }
 
