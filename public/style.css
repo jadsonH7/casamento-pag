@@ -39,7 +39,6 @@
 
 body {
     background-color: var(--color-bg-ligth);
-    overflow-x: hidden;
 }
 
 .conteiner {
