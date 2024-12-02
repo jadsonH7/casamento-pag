@@ -1,11 +1,8 @@
 /* Font */
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* Reset */
 * {
-    font-family: "Abel", "Inter", "Poppins", sans-serif;
+    font-family: "Edu AU VIC WA NT Hand", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -76,7 +73,7 @@ body {
 }
 
 .logotipo .logo.logo-active {
-    height: 14dvh;
+    height: 12dvh;
     padding-top: .5rem;
     transition: .5s;
 }
@@ -105,8 +102,8 @@ body {
 }
 
 .open-menu.exit-menu {
-    top: 3.5rem;
-    left: 17.5rem;
+    top: 4.5rem;
+    left: 12.5rem;
     border-top: transparent;
     z-index: 5;
 }
@@ -148,7 +145,7 @@ body {
 }
 
 .menu.menu-ativo {
-    width: 20rem;
+    width: 15rem;
 }
 
 .nav-menu {
@@ -157,13 +154,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 3rem 2rem 2rem 1rem;
+    padding: 2rem 1rem 2rem 1rem;
 }
 
 .box-links {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     position: relative;
 }
 
@@ -172,8 +169,8 @@ body {
 }
 
 .nav-link a {
-    font-size: 1.75rem;
-    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 600;
     color: var(--color-font-ligth);
 }
 
@@ -189,7 +186,8 @@ body {
 }
 
 .bi-box-arrow-in-right, .bi-person-circle {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
+    font-weight: 600;
     color: var(--color-font-ligth);
 }
 
@@ -210,7 +208,7 @@ body {
 .box-imgs {
     position: relative;
     width: 100%;
-    height: 230dvh;
+    height: 190dvh;
 }
 
 .img-home .img {
@@ -219,8 +217,8 @@ body {
 
 .img-home:nth-child(1) {
     position: absolute;
-    top: 1.5rem;
-    left: 2rem;
+    top: 2.5rem;
+    left: 2.5rem;
     width: 15rem;
 }
 
@@ -228,7 +226,7 @@ body {
     background-color: var(--color-font-ligth);
     border-radius: 50%;
     position: absolute;
-    top: 15rem;
+    top: 18rem;
     right: 2rem;
     height: 7rem;
     width: 7rem;
@@ -236,16 +234,16 @@ body {
 
 .img-home:nth-child(3) {
     position: absolute;
-    top: 25rem;
-    right: 5rem;
-    width: 20rem;
+    top: 30rem;
+    right: 3rem;
+    width: 19rem;
 }
 
 .img-home:nth-child(4) {
     background-color: var(--color-font-ligth);
     border-radius: 50%;
     position: absolute;
-    top: 49rem;
+    top: 53rem;
     left: 2rem;
     height: 10rem;
     width: 10rem;
@@ -253,16 +251,16 @@ body {
 
 .img-home:nth-child(5) {
     position: absolute;
-    top: 60rem;
+    top: 63rem;
     right: 2rem;
     width: 15rem;
 }
 
 .img-home:nth-child(6) {
     position: absolute;
-    top: 80rem;
-    left: 2.5rem;
-    width: 25rem;
+    top: 83rem;
+    left: 2rem;
+    width: 22rem;
     border: 1.5rem solid var(--color-font-ligth);
     border-radius: 50%;
 }
@@ -273,18 +271,19 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .content-home .title-home {
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--color-font-b-ligth);
     padding-top: 1rem;
 }
 
 .content-home .text-home {
     font-size: 1.5rem;
+    font-weight: 500;
     line-height: 2.5rem;
     color: var(--color-font-ligth);
     text-align: justify;
@@ -304,7 +303,7 @@ body {
 }
 
 .btn-center .btn-menu {
-    padding: 1rem 2rem;
+    padding: .5rem 3rem;
     font-size: 1.5rem;
     font-weight: 500;
     color: var(--color-font-ligth);
@@ -323,22 +322,22 @@ body {
 
 #noivos .title-info {
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     color: var(--color-font-b-ligth);
 }
 
-.box-information {
+.box-card-info {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
     padding: 3rem 0;
 }
 
-.information {
+.card-info {
     background-color: var(--color-bg-ligth);
     width: 20rem;
     display: flex;
@@ -350,15 +349,16 @@ body {
     text-align: center;
 }
 
-.information .subtitle-info {
+.card-info .subtitle-info {
     color: var(--color-font-b-ligth);
     font-size: 2rem;
     font-weight: 500;
 }
 
-.information .text-info {
+.card-info .text-info {
     color: var(--color-border-ligth);
     font-size: 1.4rem;
+    font-weight: 500;
     text-align: justify;
 }
 
@@ -370,7 +370,7 @@ body {
 .box-pref {
     position: relative;
     width: 100%;
-    height: 160dvh;
+    height: 145dvh;
 }
 
 .img-pref .img {
@@ -389,23 +389,23 @@ body {
     border: 1.5rem solid var(--color-font-ligth);
     border-radius: 50%;
     position: absolute;
-    top: 18rem;
+    top: 20rem;
     right: 2rem;
-    height: 9rem;
-    width: 9rem;
+    height: 8rem;
+    width: 8rem;
 }
 
 .img-pref:nth-child(3) {
     position: absolute;
-    top: 31rem;
+    top: 32rem;
     left: 3rem;
     width: 20rem;
 }
 
 .img-pref:nth-child(4) {
     position: absolute;
-    top: 55rem;
-    right: 3rem;
+    top: 58rem;
+    right: 2rem;
     width: 17rem;
     border: 1.5rem solid var(--color-font-ligth);
     border-radius: 50%;
@@ -422,13 +422,14 @@ body {
 
 .title-pref {
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     color: var(--color-font-b-ligth);
 }
 
 .text-pref {
     font-size: 1.5rem;
+    font-weight: 500;
     line-height: 2.5rem;
     color: var(--color-font-ligth);
     text-align: justify;
@@ -441,10 +442,10 @@ body {
 
 .pref-circle .img-circle {
     background-color: var(--color-font-ligth);
-    width: 10rem;
-    height: 10rem;
+    width: 7rem;
+    height: 7rem;
     border-radius: 50%;
-    margin: 1rem 0 5rem 2rem;
+    margin: 5rem 0 5rem 2rem;
 }
 
 #padrinho-pajem-daminha {
@@ -464,20 +465,7 @@ body {
     align-items: center;   
     gap: 2rem;
     background-color: var(--color-primary-ligth);
-    padding: 3rem 3rem 25rem 3rem;
-}
-
-.padrinhos .title {
-    font-size: 2.5rem;
-    font-weight: 500;
-    text-align: center;
-    color: var(--color-font-b-ligth);
-}
-
-.padrinhos .text {
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-    text-align: justify;
+    padding: 5rem 3rem 25rem 3rem;
 }
 
 .box-padrinho {
@@ -493,13 +481,27 @@ body {
 
 .card-padrinho {
     background-color: var(--color-bg-ligth);
-    width: 25rem;
+    width: 20rem;
     padding: 2rem;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+}
+
+.padrinhos .title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--color-font-b-ligth);
+}
+
+.padrinhos .text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    text-align: justify;
 }
 
 .card-padrinho .img-padrinho {
@@ -509,7 +511,11 @@ body {
 }
 
 .card-padrinho .img-padrinho img {
-    width: 20rem;
+    width: 15rem;
+}
+
+.card-padrinho span {
+    width: 100%;
 }
 
 .card-padrinho .title {
@@ -520,6 +526,7 @@ body {
 
 .card-padrinho .text {
     font-size: 1.5rem;
+    font-weight: 500;
     line-height: 2rem;
     text-align: justify;
     color: var(--color-font-ligth);
@@ -536,7 +543,7 @@ body {
 
 #festa .box-festa {
     position: relative;
-    height: 195dvh;
+    height: 170dvh;
 }
 
 .imgs-festa img {
@@ -547,7 +554,7 @@ body {
     width: 20rem;
     position: absolute;
     top: 4rem;
-    left: 4rem;
+    left: 3rem;
 }
 
 .imgs-festa:nth-child(2) {
@@ -556,8 +563,8 @@ body {
     height: 10rem;
     border-radius: 50%;
     position: absolute;
-    top: 27rem;
-    left: 5rem;
+    top: 30rem;
+    left: 3rem;
 }
 
 .imgs-festa:nth-child(3) {
@@ -568,7 +575,7 @@ body {
     border: 1rem solid var(--color-font-ligth);
     position: absolute;
     top: 37rem;
-    right: 5rem;
+    right: 3rem;
 }
 
 .imgs-festa:nth-child(4) {
@@ -596,13 +603,14 @@ body {
 
 .descricao-festa .title {
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     color: var(--color-font-b-ligth);
 }
 
 .descricao-festa .text {
     font-size: 1.5rem;
+    font-weight: 500;
     line-height: 2.5rem;
     color: var(--color-font-ligth);
     text-align: justify;
@@ -610,7 +618,6 @@ body {
 
 #ajuda-noivos {
     width: 100%;
-    position: relative;
     background-color: var(--color-secundary-ligth);
     padding: 6rem 4rem;
 }
@@ -619,8 +626,9 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
-    margin: auto;
 }
 
 .box-ajuda .ajuda-img {
@@ -628,8 +636,8 @@ body {
 }
 
 .ajuda-img img {
-    width: 22rem;
-    height: 30rem;
+    width: 20rem;
+    height: 26rem;
     object-fit: cover;
     border-radius: .5rem;
 }
@@ -660,6 +668,7 @@ body {
 
 .descricao-ajuda .text {
     font-size: 1.5rem;
+    font-weight: 500;
     color: var(--color-font-b-ligth);
     text-align: justify;
 }
@@ -687,12 +696,12 @@ body {
     border: 1.5rem solid var(--color-font-ligth);
     position: absolute;
     top: 5rem;
-    right: 7rem;
+    right: 3rem;
 }
 
 .img-agradecimento img {
     width: 20rem;
-    padding: 5rem 0 2rem 2rem;
+    padding: 8rem 0 2rem 2rem;
 }
 
 .box-agradecimento .descricao-agradecimento {
@@ -706,13 +715,14 @@ body {
 
 .descricao-agradecimento .title {
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--color-font-b-ligth);
     text-align: center;
 }
 
 .descricao-agradecimento .text {
     font-size: 1.5rem;
+    font-weight: 500;
     line-height: 2.5rem;
     color: var(--color-font-ligth);
     text-align: justify;
@@ -721,7 +731,7 @@ body {
 .imgs-agradecimentos {
     width: 100%;
     position: relative;
-    height: 170dvh;
+    height: 120dvh;
 }
 
 .imgs-agradecimentos img {
@@ -735,23 +745,23 @@ body {
     border-radius: 50%;
     position: absolute;
     top: 0;
-    left: 2rem;
+    left: 3rem;
 }
 
 .imgs-agradecimento:nth-child(2) {
-    width: 23rem;
+    width: 15rem;
     position: absolute;
-    top: 16rem;
-    right: 1rem;
-    border: 1.5rem solid var(--color-font-ligth);
+    top: 14rem;
+    left: 4rem;
+    border: 1.4rem solid var(--color-font-ligth);
     border-radius: 50%;
 }
 
 .imgs-agradecimento:nth-child(3) {
-    width: 27rem;
+    width: 20rem;
     position: absolute;
-    top: 45rem;
-    left: 2rem;
+    top: 35rem;
+    right: 2rem;
 }
 
 #contacts {
@@ -761,7 +771,7 @@ body {
 
 #contacts .imgs-contact {
     width: 100%;
-    height: 150dvh;
+    height: 110dvh;
     position: relative;
 }
 
@@ -771,8 +781,8 @@ body {
 
 .img-contact:nth-child(1) {
     background-color: var(--color-secundary-ligth);
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
     border-radius: 50%;
     border: 1.5rem solid var(--color-font-ligth);
     position: absolute;
@@ -781,10 +791,10 @@ body {
 }
 
 .img-contact:nth-child(2) {
-    width: 25rem;
+    width: 20rem;
     position: absolute;
-    top: 20rem;
-    left: 4rem;
+    top: 17rem;
+    right: 3rem;
 }
 
 .img-contact:nth-child(3) {
@@ -793,8 +803,8 @@ body {
     height: 10rem;
     border-radius: 50%;
     position: absolute;
-    top: 39rem;
-    right: 3rem;
+    top: 30rem;
+    right: 2rem;
 }
 
 .img-contact:nth-child(4) {
@@ -804,105 +814,8 @@ body {
     border-radius: 50%;
     border: 1.5rem solid var(--color-font-ligth);
     position: absolute;
-    top: 55rem;
-    left: 8rem;
-}
-
-#contact {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 5rem;
-}
-
-.title-contact {
-    font-size: 3rem;
-    font-weight: 700;
-    color: var(--color-font-b-ligth);
-}
-
-#contact .box-contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-
-.box-contact .subtitle {
-    font-size: 1.75rem;
-    font-weight: 600;
-    color: var(--color-font-b-ligth);
-}
-
-.box-contact .link-contact {
-    font-size: 1.2rem;
-    font-weight: 600;
-    letter-spacing: .1rem;
-    color: var(--color-font-ligth);
-    text-align: justify;
-}
-
-.box-contact .text-area {
-    background-color: var(--color-primary-ligth);
-    font-size: 1.3rem;
-    font-weight: 600;
-    padding: 1rem 1rem;
-    color: var(--color-font-b-ligth);
-    letter-spacing: .1rem;
-    line-height: 1.75rem;
-}
-
-.box-contact .btn-submit {
-    padding: .5rem 5rem;
-    font-size: 1.3rem;
-    font-weight: 600;
-    border: none;
-    border-radius: 1rem;
-    background-color: var(--color-font-ligth);
-    color: var(--color-bg-ligth);
-    letter-spacing: .2rem;
-}
-
-.copywhite {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-border-ligth);
-    padding: 5rem 2rem;
-}
-
-.copywhite .box-termos {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
-
-.box-termos .area-dev, .politicas {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-
-.area-dev > .text-copy, .dev, .github {
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: var(--color-bg-ligth);
-}
-
-.politicas .politica {
-    font-size: 1.3rem;
-    font-weight: 500;
-    color: var(--color-primary-ligth);
+    top: 45rem;
+    left: 6rem;
 }
 
 .logo-foot {
