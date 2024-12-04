@@ -1,5 +1,6 @@
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* Reset */
 * {
     font-family: "Edu AU VIC WA NT Hand", sans-serif;
@@ -34,6 +35,7 @@
 
 body {
     background-color: var(--color-bg-ligth);
+    scroll-behavior: smooth;
 }
 
 .conteiner {
@@ -87,7 +89,8 @@ body {
     transition: .5s;
 }
 
-.open-menu::before, .open-menu::after {
+.open-menu::before,
+.open-menu::after {
     content: "";
     display: block;
     width: 30px;
@@ -104,6 +107,15 @@ body {
     left: 12.5rem;
     border-top: transparent;
     z-index: 5;
+}
+
+.open-menu.exit-menu:hover {
+    background-color: var(--color-erro-ligth);
+    padding: 1rem 2.1rem 1rem .5rem;
+    top: 3.5rem;
+    left: 12.4rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
 }
 
 .open-menu.exit-menu::before {
@@ -164,10 +176,19 @@ body {
 
 .nav-link {
     width: 100%;
+    transition: .3s;
+}
+
+.nav-link:hover {
+    background-color: var(--color-primary-ligth);
+    width: 85%;
+    padding: .4rem .75rem;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
 }
 
 .nav-link a {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 600;
     color: var(--color-font-ligth);
 }
@@ -179,14 +200,21 @@ body {
     justify-content: space-between;
 }
 
-.login .registe {
-    width: 100%;
-}
-
-.bi-box-arrow-in-right, .bi-person-circle {
-    font-size: 1.1rem;
+.bi-box-arrow-in-right,
+.bi-person-circle {
+    font-size: 1rem;
     font-weight: 600;
     color: var(--color-font-ligth);
+}
+
+
+.bi-box-arrow-in-right:hover,
+.bi-person-circle:hover {
+    background-color: var(--color-primary-ligth);
+    padding: .1rem .4rem;
+    border-radius: .5rem;
+    transition: .3s;
+    font-size: 1.1rem;
 }
 
 /* Data */
@@ -206,7 +234,7 @@ body {
 .box-imgs {
     position: relative;
     width: 100%;
-    height: 230vh;
+    height: 225vh;
 }
 
 .img-home .img {
@@ -265,7 +293,7 @@ body {
 
 .content-home {
     width: 100%;
-    padding: 2rem 3rem;
+    padding: 4rem 3rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -285,30 +313,6 @@ body {
     line-height: 2.5rem;
     color: var(--color-font-ligth);
     text-align: justify;
-}
-
-.home .btn-center .btn-menu {
-    padding: 0 .5rem;
-}
-
-/* Buttons plus */
-.btn-center {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 4rem 0;
-}
-
-.btn-center .btn-menu {
-    padding: .5rem 3rem;
-    font-size: 1.3rem;
-    font-weight: 500;
-    color: var(--color-border-ligth);
-    border: none;
-    border-radius: 1rem;
-    cursor: pointer;
-    background-color: var(--color-secundary-ligth);
 }
 
 /* Informações Noivos */
@@ -368,7 +372,7 @@ body {
 .box-pref {
     position: relative;
     width: 100%;
-    height: 170dvh;
+    height: 160dvh;
 }
 
 .img-pref .img {
@@ -402,7 +406,7 @@ body {
 
 .img-pref:nth-child(4) {
     position: absolute;
-    top: 56rem;
+    top: 55rem;
     right: 2rem;
     width: 17rem;
     border: 1.5rem solid var(--color-primary-ligth);
@@ -443,7 +447,7 @@ body {
     width: 7rem;
     height: 7rem;
     border-radius: 50%;
-    margin: 5rem 0 5rem 2rem;
+    margin: 3rem 0 3rem 2rem;
 }
 
 #padrinho-pajem-daminha {
@@ -460,7 +464,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;   
+    align-items: center;
     gap: 2rem;
     background-color: var(--color-secundary-ligth);
     padding: 5rem 3rem 25rem 3rem;
@@ -474,7 +478,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding: 16rem 0 3rem 0;
+    padding: 21rem 0 3rem 0;
 }
 
 .card-padrinho {
@@ -615,13 +619,13 @@ body {
     text-align: justify;
 }
 
-#ajuda-noivos {
+#agradecimentos {
     width: 100%;
     background-color: var(--color-secundary-ligth);
     padding: 5rem 3rem 4rem 3rem;
 }
 
-.box-ajuda {
+.box-agradecimento {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -630,7 +634,7 @@ body {
     gap: 2rem;
 }
 
-.box-ajuda .ajuda-img {
+.box-agradecimento .img-agradecimento {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -638,14 +642,14 @@ body {
     align-items: center;
 }
 
-.ajuda-img img {
+.img-agradecimento img {
     width: 19rem;
     height: 25rem;
     object-fit: cover;
     border-radius: .5rem;
 }
 
-.descricao-ajuda {
+.descricao-agradecimento {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -653,7 +657,7 @@ body {
     margin: 3rem 0;
 }
 
-.descricao-ajuda .title {
+.descricao-agradecimento .title {
     font-size: 1.80rem;
     font-weight: 600;
     color: var(--color-border-ligth);
@@ -661,29 +665,29 @@ body {
     letter-spacing: 1px;
 }
 
-.descricao-ajuda .text {
+.descricao-agradecimento .text {
     font-size: 1.3rem;
     font-weight: 500;
     color: var(--color-border-ligth);
     text-align: justify;
 }
 
-#ajuda-noivos .btn-center .btn-menu {
+#agradecimentos .btn-center .btn-menu {
     background-color: var(--color-border-ligth);
     color: var(--color-bg-ligth);
 }
 
-#agradecimentos {
+#ajuda-noivos {
     width: 100%;
 }
 
-#agradecimentos .box-agradecimento {
+#ajuda-noivos .box-ajuda {
     width: 100%;
     padding-top: 10rem;
     position: relative;
 }
 
-.img-agradecimento .img-circle {
+.ajuda-img .img-circle {
     background-color: var(--color-bg-ligth);
     width: 8rem;
     height: 8rem;
@@ -694,12 +698,12 @@ body {
     right: 3rem;
 }
 
-.img-agradecimento img {
+.ajuda-img img {
     width: 17rem;
     padding: 8rem 0 2rem 2rem;
 }
 
-.box-agradecimento .descricao-agradecimento {
+.box-ajuda .descricao-ajuda {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -708,14 +712,14 @@ body {
     padding: 4rem 3rem;
 }
 
-.descricao-agradecimento .title {
+.descricao-ajuda .title {
     font-size: 2rem;
     font-weight: 600;
     color: var(--color-border-ligth);
     text-align: center;
 }
 
-.descricao-agradecimento .text {
+.descricao-ajuda .text {
     font-size: 1.3rem;
     font-weight: 500;
     line-height: 2.5rem;
@@ -830,7 +834,10 @@ body {
     color: var(--color-bg-ligth);
 }
 
-.box-tel .title-tel, .title-email, .title-local, .link-contact {
+.box-tel .title-tel,
+.title-email,
+.title-local,
+.link-contact {
     color: var(--color-bg-ligth);
     font-size: 1.1rem;
     text-align: justify;
@@ -898,7 +905,9 @@ body {
     gap: 1rem;
 }
 
-.area-dev .text-copy, .dev, .github {
+.area-dev .text-copy,
+.dev,
+.github {
     color: var(--color-border-ligth);
     font-size: 1.2rem;
     font-weight: 500;
