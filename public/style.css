@@ -12,12 +12,11 @@
 
 /* Theme Ligth */
 :root {
-    --color-bg-ligth: #f6f4eb;
+    --color-bg-ligth: #eaf3f7;
     --color-primary-ligth: #91c8e4;
     --color-secundary-ligth: #a0dbf8;
     --color-font-ligth: #4682a9;
-    --color-font-b-ligth: #1a6da5;
-    --color-border-ligth: #444;
+    --color-border-ligth: #1a6da5;
     --color-erro-ligth: #cf2121;
     --color-seccess-ligth: #42cf1f;
 }
@@ -28,8 +27,7 @@
     --color-primary-dark: #749bc2;
     --color-secundary-dark: #91c8e4;
     --color-font-dark: #f6f4eb;
-    --color-font-b-dark: #ebf3f6;
-    --color-border-dark: #444;
+    --color-border-dark: #ebf3f6;
     --color-erro-dark: #b11b1b;
     --color-seccess-dark: #36a01b;
 }
@@ -80,7 +78,7 @@ body {
 
 /* Icon menu */
 .logotipo .open-menu {
-    border-top: 2px solid var(--color-font-b-ligth);
+    border-top: 2px solid var(--color-border-ligth);
     width: 30px;
     position: fixed;
     top: 2.5rem;
@@ -94,7 +92,7 @@ body {
     display: block;
     width: 30px;
     height: 2px;
-    background-color: var(--color-font-b-ligth);
+    background-color: var(--color-border-ligth);
     margin-top: 6px;
     transition: 1s;
     position: relative;
@@ -223,7 +221,7 @@ body {
 }
 
 .img-home:nth-child(2) {
-    background-color: var(--color-font-ligth);
+    background-color: var(--color-primary-ligth);
     border-radius: 50%;
     position: absolute;
     top: 18rem;
@@ -240,7 +238,7 @@ body {
 }
 
 .img-home:nth-child(4) {
-    background-color: var(--color-font-ligth);
+    background-color: var(--color-primary-ligth);
     border-radius: 50%;
     position: absolute;
     top: 53rem;
@@ -261,7 +259,7 @@ body {
     top: 83rem;
     left: 2rem;
     width: 20rem;
-    border: 1.5rem solid var(--color-font-ligth);
+    border: 1.5rem solid var(--color-primary-ligth);
     border-radius: 50%;
 }
 
@@ -277,7 +275,7 @@ body {
 .content-home .title-home {
     font-size: 2.3rem;
     font-weight: 600;
-    color: var(--color-font-b-ligth);
+    color: var(--color-border-ligth);
     padding-top: 1rem;
 }
 
@@ -306,7 +304,7 @@ body {
     padding: .5rem 3rem;
     font-size: 1.3rem;
     font-weight: 500;
-    color: var(--color-font-ligth);
+    color: var(--color-border-ligth);
     border: none;
     border-radius: 1rem;
     cursor: pointer;
@@ -324,7 +322,7 @@ body {
     font-size: 2.3rem;
     font-weight: 600;
     text-align: center;
-    color: var(--color-font-b-ligth);
+    color: var(--color-border-ligth);
 }
 
 .box-card-info {
@@ -350,14 +348,14 @@ body {
 }
 
 .card-info .subtitle-info {
-    color: var(--color-font-b-ligth);
-    font-size: 2rem;
+    color: var(--color-border-ligth);
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
 .card-info .text-info {
     color: var(--color-font-ligth);
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 500;
     text-align: justify;
 }
@@ -386,7 +384,7 @@ body {
 
 .img-pref:nth-child(2) {
     background-color: var(--color-bg-ligth);
-    border: 1.5rem solid var(--color-font-ligth);
+    border: 1.5rem solid var(--color-primary-ligth);
     border-radius: 50%;
     position: absolute;
     top: 20rem;
@@ -407,7 +405,7 @@ body {
     top: 56rem;
     right: 2rem;
     width: 17rem;
-    border: 1.5rem solid var(--color-font-ligth);
+    border: 1.5rem solid var(--color-primary-ligth);
     border-radius: 50%;
 }
 
@@ -424,7 +422,7 @@ body {
     font-size: 2.3rem;
     font-weight: 600;
     text-align: center;
-    color: var(--color-font-b-ligth);
+    color: var(--color-border-ligth);
 }
 
 .text-pref {
@@ -441,7 +439,7 @@ body {
 }
 
 .pref-circle .img-circle {
-    background-color: var(--color-font-ligth);
+    background-color: var(--color-primary-ligth);
     width: 7rem;
     height: 7rem;
     border-radius: 50%;
@@ -454,7 +452,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #dbeef5;
+    background-color: var(--color-primary-ligth);
     padding: 0 0 3rem 0;
 }
 
@@ -464,7 +462,7 @@ body {
     flex-direction: column;
     align-items: center;   
     gap: 2rem;
-    background-color: var(--color-primary-ligth);
+    background-color: var(--color-secundary-ligth);
     padding: 5rem 3rem 25rem 3rem;
 }
 
@@ -476,12 +474,12 @@ body {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding: 19rem 0 3rem 0;
+    padding: 16rem 0 3rem 0;
 }
 
 .card-padrinho {
     background-color: var(--color-bg-ligth);
-    width: 19rem;
+    width: 20rem;
     padding: 2rem;
     border-radius: 1rem;
     display: flex;
@@ -494,7 +492,7 @@ body {
     font-size: 2.3rem;
     font-weight: 600;
     text-align: center;
-    color: var(--color-font-b-ligth);
+    color: var(--color-border-ligth);
 }
 
 .padrinhos .text {
@@ -502,7 +500,7 @@ body {
     font-weight: 500;
     line-height: 2.5rem;
     text-align: justify;
-    color: var(--color-font-b-ligth);
+    color: var(--color-border-ligth);
 }
 
 .card-padrinho .img-padrinho {
@@ -520,13 +518,13 @@ body {
 }
 
 .card-padrinho .title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    color: var(--color-font-b-ligth);
+    color: var(--color-border-ligth);
 }
 
 .card-padrinho .text {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 500;
     line-height: 2rem;
     text-align: justify;
@@ -559,12 +557,12 @@ body {
 }
 
 .imgs-festa:nth-child(2) {
-    background-color: var(--color-font-ligth);
+    background-color: var(--color-primary-ligth);
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
     position: absolute;
-    top: 30rem;
+    top: 26rem;
     left: 3rem;
 }
 
@@ -573,7 +571,7 @@ body {
     width: 6rem;
     height: 6rem;
     border-radius: 50%;
-    border: 1rem solid var(--color-font-ligth);
+    border: 1rem solid var(--color-primary-ligth);
     position: absolute;
     top: 37rem;
     right: 3rem;
@@ -606,7 +604,7 @@ body {
     font-size: 2.3rem;
     font-weight: 600;
     text-align: center;
-    color: var(--color-font-b-ligth);
+    color: var(--color-border-ligth);
 }
 
 .descricao-festa .text {
@@ -620,7 +618,7 @@ body {
 #ajuda-noivos {
     width: 100%;
     background-color: var(--color-secundary-ligth);
-    padding: 6rem 3rem;
+    padding: 5rem 3rem 4rem 3rem;
 }
 
 .box-ajuda {
@@ -634,12 +632,15 @@ body {
 
 .box-ajuda .ajuda-img {
     width: 100%;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .ajuda-img img {
-    width: 17rem;
-    height: 23rem;
+    width: 19rem;
+    height: 25rem;
     object-fit: cover;
     border-radius: .5rem;
 }
@@ -652,18 +653,10 @@ body {
     margin: 3rem 0;
 }
 
-.descricao-ajuda .subtitle {
-    font-size: 2rem;
-    font-weight: 500;
-    color: var(--color-font-b-ligth);
-    text-align: center;
-    letter-spacing: 2px;
-}
-
 .descricao-ajuda .title {
-    font-size: 2.3rem;
+    font-size: 1.80rem;
     font-weight: 600;
-    color: var(--color-font-b-ligth);
+    color: var(--color-border-ligth);
     text-align: center;
     letter-spacing: 1px;
 }
@@ -671,12 +664,12 @@ body {
 .descricao-ajuda .text {
     font-size: 1.3rem;
     font-weight: 500;
-    color: var(--color-font-b-ligth);
+    color: var(--color-border-ligth);
     text-align: justify;
 }
 
 #ajuda-noivos .btn-center .btn-menu {
-    background-color: var(--color-font-b-ligth);
+    background-color: var(--color-border-ligth);
     color: var(--color-bg-ligth);
 }
 
@@ -695,7 +688,7 @@ body {
     width: 8rem;
     height: 8rem;
     border-radius: 50%;
-    border: 1.5rem solid var(--color-font-ligth);
+    border: 1.5rem solid var(--color-primary-ligth);
     position: absolute;
     top: 5rem;
     right: 3rem;
@@ -716,9 +709,9 @@ body {
 }
 
 .descricao-agradecimento .title {
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-weight: 600;
-    color: var(--color-font-b-ligth);
+    color: var(--color-border-ligth);
     text-align: center;
 }
 
@@ -741,7 +734,7 @@ body {
 }
 
 .imgs-agradecimento:nth-child(1) {
-    background-color: var(--color-font-ligth);
+    background-color: var(--color-primary-ligth);
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
@@ -755,7 +748,7 @@ body {
     position: absolute;
     top: 14rem;
     left: 4rem;
-    border: 1.4rem solid var(--color-font-ligth);
+    border: 1.4rem solid var(--color-primary-ligth);
     border-radius: 50%;
 }
 
@@ -786,7 +779,7 @@ body {
     width: 8rem;
     height: 8rem;
     border-radius: 50%;
-    border: 1.5rem solid var(--color-font-ligth);
+    border: 1.5rem solid var(--color-border-ligth);
     position: absolute;
     top: 5rem;
     left: 3rem;
@@ -800,7 +793,7 @@ body {
 }
 
 .img-contact:nth-child(3) {
-    background-color: var(--color-font-ligth);
+    background-color: var(--color-border-ligth);
     width: 8rem;
     height: 8rem;
     border-radius: 50%;
@@ -814,7 +807,7 @@ body {
     width: 7rem;
     height: 7rem;
     border-radius: 50%;
-    border: 1.5rem solid var(--color-font-ligth);
+    border: 1.5rem solid var(--color-border-ligth);
     position: absolute;
     top: 42rem;
     right: 6rem;
@@ -863,21 +856,22 @@ body {
     padding: 1rem;
     font-size: 1rem;
     font-weight: 500;
-    color: var(--color-font-b-ligth);
+    color: var(--color-bg-ligth);
     background-color: transparent;
     border: none;
-    border-bottom: 2px solid var(--color-font-ligth);
+    border-bottom: 2px solid var(--color-primary-ligth);
     border-radius: 1rem;
 }
 
 .box-buttom .btn-submit {
     padding: 0 3rem;
     border-radius: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 500;
-    color: var(--color-font-b-ligth);
+    color: var(--color-border-ligth);
     border: none;
-    background-color: var(--color-secundary-ligth);
+    background-color: var(--color-primary-ligth);
+    letter-spacing: .1rem;
 }
 
 .copywhite {
@@ -905,7 +899,7 @@ body {
 }
 
 .area-dev .text-copy, .dev, .github {
-    color: var(--color-font-b-ligth);
+    color: var(--color-border-ligth);
     font-size: 1.2rem;
     font-weight: 500;
 }
@@ -924,8 +918,8 @@ body {
 }
 
 .politicas .politica {
-    color: var(--color-font-ligth);
-    font-size: 1.15rem;
+    color: var(--color-border-ligth);
+    font-size: 1.2rem;
     font-weight: 400;
 }
 
