@@ -176,13 +176,13 @@ body {
 
 .nav-link {
     width: 100%;
-    transition: .3s;
+    transition: .2s;
 }
 
 .nav-link:hover {
     background-color: var(--color-primary-ligth);
-    width: 85%;
-    padding: .4rem .75rem;
+    width: 80%;
+    padding: .4rem .5rem;
     border-top-right-radius: .5rem;
     border-bottom-right-radius: .5rem;
 }
@@ -234,7 +234,7 @@ body {
 .box-imgs {
     position: relative;
     width: 100%;
-    height: 225vh;
+    height: 220vh;
 }
 
 .img-home .img {
@@ -260,7 +260,7 @@ body {
 
 .img-home:nth-child(3) {
     position: absolute;
-    top: 30rem;
+    top: 29rem;
     right: 3rem;
     width: 17rem;
 }
@@ -269,7 +269,7 @@ body {
     background-color: var(--color-primary-ligth);
     border-radius: 50%;
     position: absolute;
-    top: 53rem;
+    top: 51rem;
     left: 2rem;
     height: 9rem;
     width: 9rem;
@@ -301,14 +301,14 @@ body {
 }
 
 .content-home .title-home {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     font-weight: 600;
     color: var(--color-border-ligth);
     padding-top: 1rem;
 }
 
 .content-home .text-home {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 500;
     line-height: 2.5rem;
     color: var(--color-font-ligth);
@@ -323,7 +323,7 @@ body {
 }
 
 #noivos .title-info {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     font-weight: 600;
     text-align: center;
     color: var(--color-border-ligth);
@@ -406,7 +406,7 @@ body {
 
 .img-pref:nth-child(4) {
     position: absolute;
-    top: 55rem;
+    top: 54rem;
     right: 2rem;
     width: 17rem;
     border: 1.5rem solid var(--color-primary-ligth);
@@ -423,14 +423,14 @@ body {
 }
 
 .title-pref {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     font-weight: 600;
     text-align: center;
     color: var(--color-border-ligth);
 }
 
 .text-pref {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 500;
     line-height: 2.5rem;
     color: var(--color-font-ligth);
@@ -447,7 +447,7 @@ body {
     width: 7rem;
     height: 7rem;
     border-radius: 50%;
-    margin: 3rem 0 3rem 2rem;
+    margin: 2rem 0 5rem 2rem;
 }
 
 #padrinho-pajem-daminha {
@@ -493,14 +493,14 @@ body {
 }
 
 .padrinhos .title {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     font-weight: 600;
     text-align: center;
     color: var(--color-border-ligth);
 }
 
 .padrinhos .text {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 500;
     line-height: 2.5rem;
     text-align: justify;
@@ -546,7 +546,7 @@ body {
 
 #festa .box-festa {
     position: relative;
-    height: 195dvh;
+    height: 185dvh;
 }
 
 .imgs-festa img {
@@ -566,7 +566,7 @@ body {
     height: 10rem;
     border-radius: 50%;
     position: absolute;
-    top: 26rem;
+    top: 25rem;
     left: 3rem;
 }
 
@@ -577,21 +577,21 @@ body {
     border-radius: 50%;
     border: 1rem solid var(--color-primary-ligth);
     position: absolute;
-    top: 37rem;
+    top: 35rem;
     right: 3rem;
 }
 
 .imgs-festa:nth-child(4) {
     width: 15rem;
     position: absolute;
-    top: 48rem;
+    top: 45rem;
     right: 4rem;
 }
 
 .imgs-festa:nth-child(5) {
     width: 18rem;
     position: absolute;
-    top: 67rem;
+    top: 65rem;
     left: 3rem;
 }
 
@@ -605,14 +605,14 @@ body {
 }
 
 .descricao-festa .title {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     font-weight: 600;
     text-align: center;
     color: var(--color-border-ligth);
 }
 
 .descricao-festa .text {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 500;
     line-height: 2.5rem;
     color: var(--color-font-ligth);
@@ -622,7 +622,7 @@ body {
 #agradecimentos {
     width: 100%;
     background-color: var(--color-secundary-ligth);
-    padding: 5rem 3rem 4rem 3rem;
+    padding: 5rem 3rem 3rem 3rem;
 }
 
 .box-agradecimento {
@@ -658,7 +658,7 @@ body {
 }
 
 .descricao-agradecimento .title {
-    font-size: 1.80rem;
+    font-size: 1.8rem;
     font-weight: 600;
     color: var(--color-border-ligth);
     text-align: center;
@@ -666,7 +666,7 @@ body {
 }
 
 .descricao-agradecimento .text {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 500;
     color: var(--color-border-ligth);
     text-align: justify;
@@ -720,7 +720,7 @@ body {
 }
 
 .descricao-ajuda .text {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 500;
     line-height: 2.5rem;
     color: var(--color-font-ligth);
@@ -730,7 +730,7 @@ body {
 .imgs-agradecimentos {
     width: 100%;
     position: relative;
-    height: 130dvh;
+    height: 125dvh;
 }
 
 .imgs-agradecimentos img {
@@ -783,7 +783,7 @@ body {
     width: 8rem;
     height: 8rem;
     border-radius: 50%;
-    border: 1.5rem solid var(--color-border-ligth);
+    border: 1.5rem solid var(--color-font-ligth);
     position: absolute;
     top: 5rem;
     left: 3rem;
@@ -797,13 +797,13 @@ body {
 }
 
 .img-contact:nth-child(3) {
-    background-color: var(--color-border-ligth);
+    background-color: var(--color-font-ligth);
     width: 8rem;
     height: 8rem;
     border-radius: 50%;
     position: absolute;
-    top: 28rem;
-    right: 2rem;
+    top: 26rem;
+    right: 1rem;
 }
 
 .img-contact:nth-child(4) {
@@ -811,7 +811,7 @@ body {
     width: 7rem;
     height: 7rem;
     border-radius: 50%;
-    border: 1.5rem solid var(--color-border-ligth);
+    border: 1.5rem solid var(--color-font-ligth);
     position: absolute;
     top: 42rem;
     right: 6rem;
@@ -839,7 +839,7 @@ body {
 .title-local,
 .link-contact {
     color: var(--color-bg-ligth);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-align: justify;
 }
 
@@ -873,7 +873,7 @@ body {
 .box-buttom .btn-submit {
     padding: 0 3rem;
     border-radius: 1rem;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     color: var(--color-border-ligth);
     border: none;
@@ -942,3 +942,12 @@ body {
     width: 100%;
     object-fit: cover;
 }
+
+/* Tablet */
+@media (width >= 768px) {}
+
+/* Notebook */
+@media (width >= 992px) {}
+
+/* Desktop */
+@media (width > 1200px) {}
