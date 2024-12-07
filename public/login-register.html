@@ -3,71 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Página de Login e Cadastro para o nosso casamento. Junte-se a nós nessa celebração!">
-    <meta name="author" content="Jadson">
     <link rel="stylesheet" href="../src/frontend/css/login-register.css">
-    <script src="../src/frontend/javascript/login-register.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <title>Login / Cadastro</title>
+    <script src="../src/frontend/javascript/login-register.js" defer></script>
+    <title>Login - Register</title>
 </head>
 <body>
-    <main class="container">
-        <section class="form-container">
-            <header>
-                <h1>Bem-vindo ao nosso casamento!</h1>
-                <div class="form-toggle">
-                    <button id="login-toggle" class="active" aria-pressed="true">Entrar</button>
-                    <button id="signup-toggle" aria-pressed="false">Cadastrar</button>
-                </div>
-            </header>
-
-            <!-- Formulário de Login -->
-            <form id="login-form" class="form" action="#" method="POST" onsubmit="return validateLogin()" aria-labelledby="login-title">
-                <h2 id="login-title">Acesso de Convidado</h2>
-                <div class="input-group">
-                    <label for="login-email">E-mail:</label>
-                    <input type="email" id="login-email" name="email" placeholder="Digite seu e-mail" required aria-describedby="login-email-error">
-                    <span class="error-message" id="login-email-error"></span>
-                </div>
-                <div class="input-group">
-                    <label for="login-password">Senha:</label>
-                    <input type="password" id="login-password" name="password" placeholder="Digite sua senha" required aria-describedby="login-password-error">
-                    <span class="error-message" id="login-password-error"></span>
-                </div>
-                <button type="submit" class="btn">Entrar</button>
-                <a href="#" class="forgot-password">Esqueceu sua senha?</a>
-            </form>
-
-            <!-- Formulário de Cadastro -->
-            <form id="signup-form" class="form" action="#" method="POST" onsubmit="return validateSignup()" aria-labelledby="signup-title">
-                <h2 id="signup-title">Crie sua conta para o casamento</h2>
-                <div class="input-group">
-                    <label for="signup-name">Nome completo:</label>
-                    <input type="text" id="signup-name" name="name" placeholder="Nome completo" required aria-describedby="signup-name-error">
-                    <span class="error-message" id="signup-name-error"></span>
-                </div>
-                <div class="input-group">
-                    <label for="signup-email">E-mail:</label>
-                    <input type="email" id="signup-email" name="email" placeholder="Digite seu e-mail" required aria-describedby="signup-email-error">
-                    <span class="error-message" id="signup-email-error"></span>
-                </div>
-                <div class="input-group">
-                    <label for="signup-password">Senha:</label>
-                    <input type="password" id="signup-password" name="password" placeholder="Crie uma senha" required aria-describedby="signup-password-error">
-                    <span class="error-message" id="signup-password-error"></span>
-                </div>
-                <div class="input-group">
-                    <label for="signup-confirm-password">Confirmar senha:</label>
-                    <input type="password" id="signup-confirm-password" name="confirm-password" placeholder="Confirme sua senha" required aria-describedby="signup-confirm-password-error">
-                    <span class="error-message" id="signup-confirm-password-error"></span>
-                </div>
-                <button type="submit" class="btn">Cadastrar</button>
-                <p class="toggle-form">Já tem uma conta? <a href="#" id="toggle-to-login">Faça login</a></p>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>© 2024 O Casamento de [Nome dos noivos]. Todos os direitos reservados.</p>
-    </footer>
+    <header></header>
+    <main></main>
 </body>
 </html>
